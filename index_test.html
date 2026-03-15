@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Astronomy Image Collection</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #111; color: #eee; text-align: center; }
+        h1 { margin-top: 1em; }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;       /* allows multiple rows */
+            gap: 15px;             /* spacing between images */
+        }
+
+        .gallery a {
+            width: 23%;            /* controls thumbnail size */
+        }
+
+        .gallery img {
+            width: 100%;           /* fills the anchor box */
+            height: auto;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Astronomy Image Collection</h1>
+    <p>Repository for SuperNova and other Astronomical Images</p>
+    <div class="gallery">
+        <a href="images/AT2026dix.jpg" target="_blank">
+          <img src="images/AT2026dix.jpg" alt="AT2026dix">
+        </a>
+        <a href="images/NGC3913.gif" target="_blank">
+          <img src="images/NGC3913.gif" alt="NGC3913">
+        </a>
+        <a href="images/NGC4216.jpg" target="_blank">
+          <img src="images/NGC4216.jpg" alt="NGC4216">
+        </a>
+        <a href="images/SN2024iss.png" target="_blank">
+          <img src="images/SN2024iss.png" alt="SN2024iss">
+        </a>
+        <a href="images/NGC_3206_2024-04-30_1200_120_Annotated.png" target="_blank">
+          <img src="images/NGC_3206_2024-04-30_1200_120_Annotated.png" alt="NGC_3206_2024-04-30_1200_120_Annotated">
+        </a>
+    </div>
+    <p>Images are available for embedding. Example:</p>
+    <code>&lt;img src="https://movo-doo.github.io/astroturf/images/AT2026dix.jpg"&gt;</code>
+</body>
+</html>
