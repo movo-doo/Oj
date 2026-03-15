@@ -1,0 +1,38 @@
+name: Build images collection
+
+on:
+  push:
+    paths:
+      - 'images/**'
+
+jobs:
+  build-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate JSON
+        run: |
+          python <<EOF
+          import os, json
+
+          image_dir = "images"
+          exts = (".jpg",".jpeg",".png",".gif")
+
+          files = sorted([f for f in os.listdir(image_dir) if f.lower().endswith(exts)])
+
+          with open("images_collection.json","w") as f:
+              json.dump(files,f,indent=2)
+
+          print("Generated images_collection.json")
+          EOF
+
+      - name: Commit updated JSON
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add images_collection.json
+          git diff --cached --quiet || git commit -m "Update image list"
+          git push
