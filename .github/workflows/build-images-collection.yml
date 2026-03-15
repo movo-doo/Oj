@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          persist-credentials: true   # <- this allows git push in workflow
+          persist-credentials: false   # <- using a personal access token instead
           
       - name: Generate JSON
         run: |
@@ -32,9 +32,12 @@ jobs:
           EOF
 
       - name: Commit updated JSON
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add images_collection.json
           git diff --cached --quiet || git commit -m "Update image list"
-          git push
+          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/movo-doo/astroturf.git
+          git push origin main
