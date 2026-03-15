@@ -1,10 +1,24 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Astronomy Image Collection</title>
+    <meta charset="UTF-8">
+    <title>Astronomy Image Collection</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #111; color: #eee; text-align: center; }
+        h1 { margin-top: 1em; }
+        .gallery img { margin: 10px; max-width: 300px; border: 2px solid #444; border-radius: 4px; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+    </style>
 </head>
-
 <body>
-  <h1>My Astronomy Image Collection</h1>
-  <p>Repository for SuperNova and other Astronomical Images</p>
+    <h1>My Astronomy Image Collection</h1>
+    <p>Repository for SuperNova and other Astronomical Images</p>
+    <div class="gallery">
+        <img src="images/AT2026dix.jpg" alt="AT2026dix">
+        <img src="images/NGC3913.gif" alt="NGC3913">
+        <img src="images/NGC4216.jpg" alt="NGC4216">
+    </div>
+    <p>Images are available for embedding. Example:</p>
+    <code>&lt;img src="https://movo-doo.github.io/astroturf/images/AT2026dix.jpg"&gt;</code>
 </body>
 </html>
