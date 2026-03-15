@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Astronomy Image Collection</title>
-<style>
-body { font-family: Arial, sans-serif; background: #111; color: #eee; text-align: center; }
-h1 { margin-top: 1em; }
-.gallery { display: flex; flex-wrap: wrap; justify-content: center; }
-.gallery img { margin: 10px; max-width: 300px; border: 2px solid #444; border-radius: 4px; cursor: pointer; }
-</style>
+    <meta charset="UTF-8">
+    <title>Astronomy Image Collection</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #111; color: #eee; text-align: center; }
+        h1 { margin-top: 1em; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+        .gallery img { margin: 10px; max-width: 300px; border: 2px solid #444; border-radius: 4px; cursor: pointer; }
+    </style>
 </head>
 <body>
-<h1>My Astronomy Image Collection</h1>
-<p>Repository for SuperNova and other Astronomical Images</p>
-<div class="gallery" id="gallery"></div>
+    <h1>My Astronomy Image Collection</h1>
+    <p>Repository for SuperNova and other Astronomical Images</p>
+    <div class="gallery" id="gallery"></div>
 
-<p>Images are available for embedding. Example:</p>
-<code>&lt;img src="https://movo-doo.github.io/astroturf/images/AT2026dix.jpg"&gt;</code>
+    <p>Images are available for embedding. Example:</p>
+    <code>&lt;img src="https://movo-doo.github.io/astroturf/images/AT2026dix.jpg"&gt;</code>
 
-<script>
-// GitHub Pages automatically provides a JSON index if you list the folder URL with ?raw=true
-// For a static solution, we can fetch the directory listing using the GitHub repo API
-const repo = "movo-doo.github.io/astroturf"; // <-- replace with your GitHub username/repo
-const folder = "images";
+    <script>
+      // GitHub Pages automatically provides a JSON index if you list the folder URL with ?raw=true
+      // For a static solution, we can fetch the directory listing using the GitHub repo API
+      const repo = "movo-doo.github.io/astroturf"; // <-- replace with your GitHub username/repo
+      const folder = "images";
 
-async function loadImages() {
-const apiUrl = `https://api.github.com/repos/${repo}/contents/${folder}`;
-const response = await fetch(apiUrl);
-const data = await response.json();
-const gallery = document.getElementById("gallery");
+      async function loadImages() {
+        const apiUrl = `https://api.github.com/repos/${repo}/contents/${folder}`;
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        const gallery = document.getElementById("gallery");
 
-data.forEach(file => {
-if(file.name.match(/\.(jpg|jpeg|png|gif)$/i)) {
-const img = document.createElement("img");
-img.src = file.download_url;
-img.alt = file.name;
-gallery.appendChild(img);
-}
-});
-}
+        data.forEach(file => {
+          if(file.name.match(/\.(jpg|jpeg|png|gif)$/i)) {
+            const img = document.createElement("img");
+            img.src = file.download_url;
+            img.alt = file.name;
+            gallery.appendChild(img);
+          }
+        });
+      }
 
-loadImages();
-</script>
+      loadImages();
+    </script>
 </body>
 </html>
