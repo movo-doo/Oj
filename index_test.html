@@ -31,30 +31,30 @@
 
     <script>
 
-    const images = [
-    "AT2026dix.jpg",
-    "NGC3913.gif",
-    "NGC4216.jpg",
-    "SN2024iss.png",
-    "NGC_3206_2024-04-30_1200_120_Annotated.png"
-    ];
+    fetch("images_collection.json")
+      .then(response => response.json())
+      .then(images => {
 
-    const gallery = document.getElementById("gallery");
+        const gallery = document.getElementById("gallery");
 
-    images.forEach(file => {
+        images.forEach(file => {
 
-        const a = document.createElement("a");
-        a.href = "images/" + file;
-        a.target = "_blank";
+            const a = document.createElement("a");
+            a.href = "images/" + file;
+            a.target = "_blank";
 
-        const img = document.createElement("img");
-        img.src = "images/" + file;
-        img.alt = file.replace(/\.[^/.]+$/, "");
+            const img = document.createElement("img");
+            img.src = "images/" + file;
+            img.alt = file.replace(/\.[^/.]+$/, "");
 
-        a.appendChild(img);
-        gallery.appendChild(a);
+            a.appendChild(img);
+            gallery.appendChild(a);
 
-    });
+        });
+
+      })
+      .catch(error => console.error("Error loading image list:", error));
+
 
     </script>
     </div>
