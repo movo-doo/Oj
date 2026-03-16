@@ -47,6 +47,20 @@ h1 { margin-top: 1em; }
     display: block;
 }
 
+.image-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth transition */
+}
+
+.image-container img:hover {
+    transform: scale(1.08); /* slightly enlarge on hover */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* subtle shadow */
+}
+
 /* Responsive adjustments */
 @media (max-width: 1000px) {
     .image-container { width: 31%; }
