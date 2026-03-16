@@ -40,11 +40,11 @@
         images.forEach(file => {
 
             const a = document.createElement("a");
-            a.href = "images/" + file;
+            a.href = "images/" + encodeURIComponent(file);
             a.target = "_blank";
 
             const img = document.createElement("img");
-            img.src = "images/" + file;
+            img.src = "images/" + encodeURIComponent(file);
             img.alt = file.replace(/\.[^/.]+$/, "");
 
             a.appendChild(img);
