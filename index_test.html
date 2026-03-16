@@ -2,15 +2,16 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Astroturf Image Collection</title>
+  <title>AstroTurf Image Collection</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>AstroTurf Image Collection</h1>
-    <p>Repository for SuperNova and other Astronomical Images</p>
-    <div class="gallery" id="gallery"></div>
+  <h1>AstroTurf Image Collection</h1>
+  <p>Repository for SuperNova and other Astronomical Images</p>
 
-    <script>
+  <div class="gallery" id="gallery"></div>
+
+  <script>
     fetch("images_collection.json")
       .then(response => response.json())
       .then(images => {
@@ -25,6 +26,8 @@
           }
 
           const normalizedFile = name + ext;
+
+          console.log("Adding image:", normalizedFile); // debug
 
           const container = document.createElement("div");
           container.classList.add("image-container");
@@ -49,9 +52,9 @@
         });
       })
       .catch(error => console.error("Error loading image list:", error));
-    </script>
+  </script>
 
-    <p>Images are available for embedding. Example:</p>
-    <code>&lt;img src="https://movo-doo.github.io/astroturf/images/AT2026dix.jpg"&gt;</code>
+  <p>Images are available for embedding. Example:</p>
+  <code>&lt;img src="https://movo-doo.github.io/astroturf/images/AT2026dix.jpg"&gt;</code>
 </body>
 </html>
