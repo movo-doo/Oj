@@ -1,7 +1,8 @@
 name: Build images collection
 
 on:
-  push
+  push:
+    paths: - 'images/**'
 
 permissions:
   contents: write
