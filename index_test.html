@@ -34,21 +34,29 @@
     fetch("images_collection.json")
       .then(response => response.json())
       .then(images => {
-
         const gallery = document.getElementById("gallery");
+        files.forEach(file => {
+          // Split filename into name and extension
+          const lastDot = file.lastIndexOf(".");
+          let name = file;
+          let ext = "";
+          if (lastDot !== -1) {
+            name = file.substring(0, lastDot);
+            ext = file.substring(lastDot).toLowerCase(); // lowercase extension
+          }
 
-        images.forEach(file => {
+          const normalizedFile = name + ext;
 
-            const a = document.createElement("a");
-            a.href = "images/" + encodeURIComponent(file);
-            a.target = "_blank";
+          const a = document.createElement("a");
+          a.href = "images/" + encodeURIComponent(normalizedFile);
+          a.target = "_blank";
 
-            const img = document.createElement("img");
-            img.src = "images/" + encodeURIComponent(file);
-            img.alt = file.replace(/\.[^/.]+$/, "");
+          const img = document.createElement("img");
+          img.src = "images/" + encodeURIComponent(normalizedFile);
+          img.alt = name; // alt text without extension
 
-            a.appendChild(img);
-            gallery.appendChild(a);
+          a.appendChild(img);
+          gallery.appendChild(a);
 
         });
 
