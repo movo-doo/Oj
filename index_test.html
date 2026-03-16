@@ -35,7 +35,7 @@
       .then(response => response.json())
       .then(images => {
         const gallery = document.getElementById("gallery");
-        files.forEach(file => {
+        images.forEach(file => {
           // Split filename into name and extension
           const lastDot = file.lastIndexOf(".");
           let name = file;
