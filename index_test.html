@@ -11,34 +11,29 @@
     <div class="gallery" id="gallery"></div>
 
     <script>
-
     fetch("images_collection.json")
       .then(response => response.json())
       .then(images => {
         const gallery = document.getElementById("gallery");
         images.forEach(file => {
-          // Split filename into name and extension
           const lastDot = file.lastIndexOf(".");
           let name = file;
           let ext = "";
           if (lastDot !== -1) {
             name = file.substring(0, lastDot);
-            ext = file.substring(lastDot).toLowerCase(); // lowercase extension
+            ext = file.substring(lastDot).toLowerCase();
           }
 
           const normalizedFile = name + ext;
 
-          // Create container for image + label
           const container = document.createElement("div");
           container.classList.add("image-container");
 
-          // Create label above image
           const label = document.createElement("div");
           label.classList.add("image-label");
-          label.textContent = name;  // alt value / filename without extension
+          label.textContent = name;
           container.appendChild(label);
 
-          // Create link and image
           const a = document.createElement("a");
           a.href = "images/" + encodeURIComponent(normalizedFile);
           a.target = "_blank";
@@ -55,6 +50,7 @@
       })
       .catch(error => console.error("Error loading image list:", error));
     </script>
+
     <p>Images are available for embedding. Example:</p>
     <code>&lt;img src="https://movo-doo.github.io/astroturf/images/AT2026dix.jpg"&gt;</code>
 </body>
