@@ -5,40 +5,28 @@ on:
     paths:
       - 'images/**'
 
+permissions:
+  contents: write
+
 jobs:
   build-json:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT_TOKEN }}   # <-- important, ensures all git operations use the PAT
-          
-      - name: Generate JSON
+      - uses: actions/checkout@v4
+
+      - name: Generate images_collection.json
         run: |
-          python <<EOF
-          import os, json
+          cd images
+          ls -1 *.jpg *.jpeg *.png *.gif 2>/dev/null | sort | \
+          awk '{print "\"" $0 "\""}' | \
+          sed '1s/^/[/' | sed '$s/$/]/' | \
+          paste -sd, - > ../images_collection.json
 
-          image_dir = "images"
-          exts = (".jpg",".jpeg",".png",".gif")
-
-          files = sorted([f for f in os.listdir(image_dir) if f.lower().endswith(exts)])
-
-          with open("images_collection.json","w") as f:
-              json.dump(files,f,indent=2)
-
-          print("Generated images_collection.json")
-          EOF
-
-      - name: Commit updated JSON
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Commit update
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add images_collection.json
           git diff --cached --quiet || git commit -m "Update image list"
-          # Set remote URL to include PAT for push
-          git remote set-url origin https://x-access-token:${PAT_TOKEN}@github.com/movo-doo/astroturf.git
-          git push origin main
+          git push
