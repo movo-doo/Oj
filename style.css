@@ -1,4 +1,5 @@
-/* style.css */
+/* style.css - responsive, polished gallery */
+
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -15,25 +16,46 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px; /* adjust as needed */
+  width: 23%;          /* ~4 images per row on desktop */
+  min-width: 180px;    /* ensures small screens don’t shrink too much */
+  box-sizing: border-box;
+  transition: transform 0.2s;
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.image-container:hover {
+  transform: scale(1.05);  /* subtle zoom effect on hover */
 }
 
 .image-label {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-size: 0.9em;
   text-align: center;
   word-break: break-word;
 }
 
-@media (max-width: 600px) {
+.image-container img {
+  width: 100%;       /* fill container width */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
   .image-container {
-    width: 45%;
+    width: 31%;      /* 3 per row on medium screens */
+  }
+}
+
+@media (max-width: 700px) {
+  .image-container {
+    width: 48%;      /* 2 per row on small screens */
+  }
+}
+
+@media (max-width: 450px) {
+  .image-container {
+    width: 100%;     /* 1 per row on very small screens */
   }
 }
