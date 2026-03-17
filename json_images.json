@@ -1,0 +1,39 @@
+// json_images.json
+[
+  {
+    "file": "AT2026dix.jpg",
+    "categories": ["One", "Three"]
+  },
+  {
+    "file": "NGC 891 Silver Sliver.jpg",
+    "categories": ["Two", "Six"]
+  },
+  {
+    "file": "NGC3913 SN2016dix.gif",
+    "categories": ["One", "Four", "Five"]
+  },
+  {
+    "file": "NGC4216.jpg",
+    "categories": ["One", "Three"]
+  },
+  {
+    "file": "NGC6960 Western Veil.png",
+    "categories": ["Two", "Six"]
+  },
+  {
+    "file": "NGC_3206_2024-04-30_1200_120_Annotated.png",
+    "categories": ["One", "Four", "Five"]
+  },
+  {
+    "file": "NGC_4038 Antennae.jpg",
+    "categories": ["One", "Three"]
+  },
+  {
+    "file": "PGC8961 Stem and Rose.jpg",
+    "categories": ["Two", "Six"]
+  },
+  {
+    "file": "SN2024iss.png",
+    "categories": ["One", "Four", "Five"]
+  }
+]
