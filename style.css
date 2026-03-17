@@ -126,6 +126,18 @@ h1 { margin-top: 1em; }
     .image-container { width: 48%; } /* 2 per row */
 }
 
+@media (max-width: 600px) {
+    .category-button {
+        min-width: 60px;
+        max-width: 100px;
+        padding: 4px 4px;
+        font-size: 0.8em;
+    }
+
+    .category-bar {
+        gap: 4px;
+    }
+}
 @media (max-width: 450px) {
     .image-container { width: 100%; } /* 1 per row */
 }
