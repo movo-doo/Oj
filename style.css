@@ -88,12 +88,13 @@ h1 { margin-top: 1em; }
     color: #FDDA0D;
     border: 1px solid #FDDA0D;
 
-    padding: 6px 10px;
+    padding: 6px 8px;
     border-radius: 6px;
     cursor: pointer;
 
-    width: 120px;              /* fixed width (controls wrapping) */
-    height: 48px;              /* fixed height (key part) */
+    min-width: 100px;
+    max-width: 140px;
+    min-height: 48px;
 
     display: flex;             /* center text nicely */
     align-items: center;
