@@ -87,9 +87,21 @@ h1 { margin-top: 1em; }
     background: #222;
     color: #FDDA0D;
     border: 1px solid #FDDA0D;
-    padding: 6px 12px;
+
+    padding: 6px 10px;
     border-radius: 6px;
     cursor: pointer;
+
+    width: 120px;              /* fixed width (controls wrapping) */
+    height: 48px;              /* fixed height (key part) */
+
+    display: flex;             /* center text nicely */
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    line-height: 1.2;
+    white-space: normal;       /* allow wrapping */
 }
 
 .category-button:hover {
