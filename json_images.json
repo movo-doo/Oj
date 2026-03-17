@@ -2,7 +2,7 @@
   {
     "file": "AT2026dix.jpg",
     "categories": [
-      "S-Nova"
+      "SuperNovae"
     ]
   },
   {
@@ -15,7 +15,7 @@
   {
     "file": "NGC3913 SN2016dix.gif",
     "categories": [
-      "S-Nova",
+      "SuperNovae",
       "NGC"
     ]
   },
@@ -23,7 +23,7 @@
     "file": "NGC4216.jpg",
     "categories": [
       "NGC",
-      "S-Nova",
+      "SuperNovae",
       "Galaxies"
     ]
   },
@@ -38,7 +38,7 @@
     "file": "NGC_3206_2024-04-30_1200_120_Annotated.png",
     "categories": [
       "NGC",
-      "S-Nova"
+      "SuperNovae"
     ]
   },
   {
@@ -57,7 +57,7 @@
   {
     "file": "SN2024iss.png",
     "categories": [
-      "S-Nova"
+      "SuperNovae"
     ]
   },
   {
@@ -77,7 +77,7 @@
   {
     "file": "M 27 Nebula Planetary Dumbell.jpg",
     "categories": [
-      "Caldwell",
+      "Messier",
       "NGC"
     ]
   },
@@ -100,6 +100,114 @@
     "categories": [
       "Messier",
       "NGC"
+    ]
+  },
+  {
+    "file": "Lunar 1.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 11.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 15.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 4.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 17.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 20.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 21.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 22.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 24.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 25.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 5.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Lunar 7.jpg",
+    "categories": [
+      "Lunar"
+    ]
+  },
+  {
+    "file": "Quasars Twin QSO 0957 +561.jpg",
+    "categories": [
+      "Quasars"
+    ]
+  },
+  {
+    "file": "Solar 20240618 1230.jpg",
+    "categories": [
+      "Solar"
+    ]
+  },
+  {
+    "file": "Solar 20251204-104548.jpg",
+    "categories": [
+      "Solar"
+    ]
+  },
+  {
+    "file": "Solar 20260208-121619.jpg",
+    "categories": [
+      "Solar"
+    ]
+  },
+  {
+    "file": "Solar Spots 20250120.jpg",
+    "categories": [
+      "Solar"
+    ]
+  },
+  {
+    "file": "Solar Spots 20251108-102056.jpg",
+    "categories": [
+      "Solar"
     ]
   }
 ]

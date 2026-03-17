@@ -52,11 +52,6 @@ function updateGallery() {
     ? allImages.filter(img => img.categories.includes(activeCategory))
     : allImages;
 
-  // 👇 ADD THIS SORT
-  filtered.sort((a, b) => 
-    a.file.localeCompare(b.file, undefined, { numeric: true, sensitivity: 'base' })
-  );
-
   filtered.forEach(item => {
     const file = item.file;
 
@@ -84,6 +79,7 @@ function updateGallery() {
     gallery.appendChild(container);
   });
 }
+
 // Highlight active button
 function setActiveButton(activeBtn) {
   document.querySelectorAll(".category-button").forEach(btn =>
