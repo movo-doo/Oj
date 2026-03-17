@@ -1,0 +1,11 @@
+// categories.json
+{
+  "categories": [
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six"
+  ]
+}
