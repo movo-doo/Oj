@@ -28,7 +28,7 @@ for filename in os.listdir(IMAGE_FOLDER):
 
             data.append({
                 "file": filename,
-                "categories": []
+                "categories": ["Uncategorized"]
             })
 
 # Save updated JSON
