@@ -5,7 +5,7 @@
   },
   {
     "file": "NGC 891 Silver Sliver.jpg",
-    "categories": ["NGC"]
+    "categories": ["NGC", "Galaxies"]
   },
   {
     "file": "NGC3913 SN2016dix.gif",
@@ -33,6 +33,6 @@
   },
   {
     "file": "SN2024iss.png",
-    "categories": ["S-Nova", "Four", "Five"]
+    "categories": ["S-Nova"]
   }
 ]
