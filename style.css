@@ -22,14 +22,15 @@ h1 { margin-top: 1em; }
 
 /* --- Image card container --- */
 .image-container {
+    position: relative;   /* ADD THIS */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 23%;              /* ~4 items per row on desktop */
-    min-width: 150px;        /* prevent too small items on narrow screens */
+    width: 23%;
+    min-width: 150px;
     box-sizing: border-box;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth hover */
-    cursor: pointer;         /* optional: indicate hoverable */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 /* --- Card hover effect (zoom + shadow) --- */
@@ -38,13 +39,20 @@ h1 { margin-top: 1em; }
     box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
-/* --- Label above each image --- */
+/* --- Label top left corner each image --- */
 .image-label {
-    margin-bottom: 6px;
-    font-size: 0.9em;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    background: rgba(0, 0, 0, 0.6); /* readable overlay */
     color: #FDDA0D;
-    word-break: break-word;
-    text-align: center;
+
+    padding: 4px 8px;
+    font-size: 0.85em;
+    border-radius: 4px;
+
+    pointer-events: none; /* prevents blocking clicks */
 }
 
 /* --- Anchor/link styling --- */
