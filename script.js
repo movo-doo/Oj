@@ -10,7 +10,7 @@ fetch("json_categories.json")
   .then(data => {
     data.categories.forEach(cat => {
       const btn = document.createElement("button");
-      btn.textContent = cat;
+      btn.innerHTML = cat.replace(" ", "<br>");
       btn.classList.add("category-button");
 
       btn.addEventListener("click", () => {
