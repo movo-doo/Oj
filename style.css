@@ -92,7 +92,7 @@ h1 { margin-top: 1em; }
     border-radius: 6px;
     cursor: pointer;
 
-    width: 110px;             /* tighten this */
+    width: 95px;             /* tighten this */
     min-height: 48px;
 
     display: flex;             /* center text nicely */
