@@ -70,31 +70,36 @@
   {
     "file": "Caldwell 63.jpg",
     "categories": [
-      "Uncategorized"
+      "Caldwell",
+      "NGC"
     ]
   },
   {
     "file": "M 27 Nebula Planetary Dumbell.jpg",
     "categories": [
-      "Uncategorized"
+      "Caldwell",
+      "NGC"
     ]
   },
   {
     "file": "M 20 Nebula Trifid.jpg",
     "categories": [
-      "Uncategorized"
+      "Messier",
+      "NGC"
     ]
   },
   {
     "file": "M 17 Nebula.jpg",
     "categories": [
-      "Uncategorized"
+      "Messier",
+      "NGC"
     ]
   },
   {
     "file": "M 31 Galaxy Andromeda.jpg",
     "categories": [
-      "Uncategorized"
+      "Messier",
+      "NGC"
     ]
   }
 ]
