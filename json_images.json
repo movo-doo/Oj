@@ -209,5 +209,36 @@
     "categories": [
       "Solar"
     ]
+  },
+  {
+    "file": "Cluster_Globular Messier 13.jpg",
+    "categories": [
+      "Messier",
+      "Clusters Globular"
+    ]
+  },
+  {
+    "file": "Messier 11 Clusters_open NGC 6705.jpg",
+    "categories": [
+      "Messier",
+      "Clusters Open",
+      "NGC"
+    ]
+  },
+  {
+    "file": "Messier 37 Clusters_Open NGC 2099.jpg",
+    "categories": [
+      "Messier",
+      "NGC",
+      "Clusters Open"
+    ]
+  },
+  {
+    "file": "NGC 869 Caldwell 14 Clusters_Open.jpg",
+    "categories": [
+      "NGC",
+      "Clusters Open",
+      "Caldwell"
+    ]
   }
 ]
