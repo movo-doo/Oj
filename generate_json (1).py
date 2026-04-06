@@ -13,7 +13,6 @@ VALID_EXTENSIONS = (".jpg", ".jpeg", ".png", ".gif", ".webp")
 def normalize_text(text):
     return re.sub(r"\s+", " ", text.lower().replace("_", " ")).strip()
 
-
 def extract_categories_from_filename(filename, normalized_categories):
     name = os.path.splitext(filename)[0]
 
