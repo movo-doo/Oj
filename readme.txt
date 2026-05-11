@@ -86,7 +86,7 @@ http://localhost:8000/
 or you can replace "localhost" with the ip address of the computer running a web service.
 
 To access from github the following url should work.
-https://{Your github account}.github.io/astroturf/index.html
+https://{Your github account}.github.io/Oj/index.html
 
 Only python modules utilized in this project are as follows:  os, json, re, pandas
 
