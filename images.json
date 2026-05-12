@@ -5268,6 +5268,28 @@
       "categories": [
         "Comets"
       ]
+    },
+    {
+      "file": "C 66 NGC 5694 Globular Cluster 2026-05-11 22 min.jpg",
+      "categories": [
+        "Caldwell",
+        "NGC",
+        "Clusters",
+        "Clusters Globular"
+      ],
+      "info": {
+        "identifiers": {
+          "Caldwell": "C 66",
+          "NGC": "NGC 5694"
+        },
+        "extended_info": {
+          "Type": "GCl",
+          "Coordinates": "14:39:36.51 -26:32:18.0",
+          "Constellation": "Hydra",
+          "Axis": "3.3",
+          "V-Mag": "10.89"
+        }
+      }
     }
   ]
 }
