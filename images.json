@@ -5337,6 +5337,31 @@
           "Common names": "Whale Galaxy"
         }
       }
+    },
+    {
+      "file": "NGC 4631 Barred Spiral Whale Galaxy w Hockey Stick NGC 4565  2026-05-15 47 min.jpg",
+      "categories": [
+        "NGC",
+        "Galaxies",
+        "Galaxies Spiral",
+        "Galaxies Barred Spiral"
+      ],
+      "info": {
+        "identifiers": {
+          "NGC": "NGC 4631"
+        },
+        "extended_info": {
+          "Type": "G",
+          "Coordinates": "12:42:08.01 +32:32:29.4",
+          "Constellation": "Canes Venatici",
+          "Axis": "14.45 2.20",
+          "PosAng": "86",
+          "V-Mag": "9.24",
+          "SurfBr": "22.44",
+          "Hubble": "SBcd",
+          "Common names": "Whale Galaxy"
+        }
+      }
     }
   ]
 }
