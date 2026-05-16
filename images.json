@@ -5314,6 +5314,29 @@
           "Common names": "Bug Nebula,Butterfly Nebula"
         }
       }
+    },
+    {
+      "file": "NGC 4216 Holm 353 Nearly Edge-on Spiral Galaxy 2026-05-15 59 min.jpg",
+      "categories": [
+        "NGC",
+        "Galaxies",
+        "Galaxies Spiral"
+      ],
+      "info": {
+        "identifiers": {
+          "NGC": "NGC 4216"
+        },
+        "extended_info": {
+          "Type": "G",
+          "Coordinates": "12:15:54.44 +13:08:57.8",
+          "Constellation": "Virgo",
+          "Axis": "7.82 1.84",
+          "PosAng": "20",
+          "V-Mag": "9.93",
+          "SurfBr": "23.12",
+          "Hubble": "SABb"
+        }
+      }
     }
   ]
 }
