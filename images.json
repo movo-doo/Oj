@@ -5362,6 +5362,19 @@
           "Common names": "Whale Galaxy"
         }
       }
+    },
+    {
+      "file": "Abell 33 Planetary Nebula 256 min.jpg",
+      "categories": [
+        "Abell",
+        "Nebulae",
+        "Nebulae Planetary"
+      ],
+      "info": {
+        "identifiers": {
+          "Abell": "ABELL 33"
+        }
+      }
     }
   ]
 }
