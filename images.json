@@ -5405,6 +5405,32 @@
       "categories": [
         "Asteroids"
       ]
+    },
+    {
+      "file": "SN2026sqf NGC 3310 Barred Spiral Galaxy w Supernova.jpg",
+      "categories": [
+        "NGC",
+        "Galaxies",
+        "Galaxies Spiral",
+        "Galaxies Barred Spiral",
+        "SuperNovae"
+      ],
+      "info": {
+        "identifiers": {
+          "NGC": "NGC 3310",
+          "SuperNovae": "SN 2026SQF"
+        },
+        "extended_info": {
+          "Type": "G",
+          "Coordinates": "10:38:45.86 +53:30:12.2",
+          "Constellation": "Ursa Major",
+          "Axis": "1.80 1.73",
+          "PosAng": "10",
+          "V-Mag": "11.61",
+          "SurfBr": "21.27",
+          "Hubble": "SABb"
+        }
+      }
     }
   ]
 }
