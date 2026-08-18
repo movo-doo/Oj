@@ -5431,6 +5431,28 @@
           "Hubble": "SABb"
         }
       }
+    },
+    {
+      "file": "M 51 IC 4277 Galaxy Spiral 2026-08-13 28 min.jpg",
+      "categories": [
+        "Messier",
+        "IC",
+        "Galaxies",
+        "Galaxies Spiral"
+      ],
+      "info": {
+        "identifiers": {
+          "Messier": "M 51",
+          "IC": "IC 4277"
+        },
+        "extended_info": {
+          "Type": "G",
+          "Coordinates": "13:30:16.72 +47:18:51.0",
+          "Constellation": "Canes Venatici",
+          "Axis": "0.67 0.08",
+          "PosAng": "91"
+        }
+      }
     }
   ]
 }
