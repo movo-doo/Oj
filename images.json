@@ -5459,6 +5459,20 @@
       "categories": [
         "Lunar"
       ]
+    },
+    {
+      "file": "LDN 1217 Bok globule HH 450 Barnard 175 Wolfs Cave Dark Reflection Nebula VdB 152 2026-08-20 152 min.png",
+      "categories": [
+        "Lynds LdN",
+        "Nebulae",
+        "Nebulae Reflection",
+        "Nebulae Dark"
+      ],
+      "info": {
+        "identifiers": {
+          "Lynds LdN": "LDN 1217"
+        }
+      }
     }
   ]
 }
