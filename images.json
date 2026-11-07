@@ -5448,33 +5448,6 @@
           "Lynds LdN": "LDN 1217"
         }
       }
-    },
-    {
-      "file": "M 109 NGC 3992 Vacuum Cleaner Barred Spiral Galaxy 2025-03-01 17 min.jpg",
-      "categories": [
-        "Messier",
-        "NGC",
-        "Galaxies",
-        "Galaxies Spiral",
-        "Galaxies Barred Spiral"
-      ],
-      "info": {
-        "identifiers": {
-          "Messier": "M 109",
-          "NGC": "NGC 3992"
-        },
-        "extended_info": {
-          "Type": "G",
-          "Coordinates": "11:57:35.98 +53:22:28.3",
-          "Constellation": "Ursa Major",
-          "Axis": "8.07 5.64",
-          "PosAng": "78",
-          "V-Mag": "9.88",
-          "SurfBr": "23.45",
-          "Hubble": "Sbc",
-          "M": "109"
-        }
-      }
     }
   ]
 }
