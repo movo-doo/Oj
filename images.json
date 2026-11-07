@@ -5448,6 +5448,31 @@
           "Lynds LdN": "LDN 1217"
         }
       }
+    },
+    {
+      "file": "SN2026ahvi OJais NGC 4189  Spiral Galaxy 2026-11-07 75 min .jpg",
+      "categories": [
+        "NGC",
+        "Galaxies",
+        "Galaxies Spiral",
+        "SuperNovae"
+      ],
+      "info": {
+        "identifiers": {
+          "NGC": "NGC 4189",
+          "SuperNovae": "SN 2026AHVI"
+        },
+        "extended_info": {
+          "Type": "G",
+          "Coordinates": "12:13:47.27 +13:25:29.3",
+          "Constellation": "Coma Berenices",
+          "Axis": "2.20 1.79",
+          "PosAng": "87",
+          "V-Mag": "11.84",
+          "SurfBr": "22.79",
+          "Hubble": "Sc"
+        }
+      }
     }
   ]
 }
