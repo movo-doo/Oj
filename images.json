@@ -5473,6 +5473,27 @@
           "Hubble": "Sc"
         }
       }
+    },
+    {
+      "file": "NGC 2371 Double Bubble Planetary Nebula 2026-11-18 4.25 HRS.jpg",
+      "categories": [
+        "NGC",
+        "Nebulae",
+        "Nebulae Planetary"
+      ],
+      "info": {
+        "identifiers": {
+          "NGC": "NGC 2371"
+        },
+        "extended_info": {
+          "Type": "PN",
+          "Coordinates": "07:25:34.66 +29:29:26.3",
+          "Constellation": "Gemini",
+          "Axis": "2.20 0.96",
+          "PosAng": "125",
+          "V-Mag": "11.2"
+        }
+      }
     }
   ]
 }
